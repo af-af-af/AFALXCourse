@@ -11,14 +11,14 @@
             Console.WriteLine("*\tmultiplication");
             Console.WriteLine("/\tdivision \n");
             Console.Write("Choose operation: ");
-            var operationCharacter = Console.ReadKey();
+            var operationCharacterInfo = Console.ReadKey();
             Console.WriteLine();
             Console.Write("X number: ");
             var x = Double.Parse(Console.ReadLine());
             Console.Write("Y number: ");
             var y = Double.Parse(Console.ReadLine());
 
-            PerformOperation(operationCharacter.KeyChar, x, y);
+            PerformOperation(operationCharacterInfo.KeyChar, x, y);
         }
 
         private void PerformOperation(char operationChar, double x, double y)
