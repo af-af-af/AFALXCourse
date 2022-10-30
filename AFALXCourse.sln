@@ -10,6 +10,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.gitignore = .gitignore
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ALXCalculator", "ALXCalculator\ALXCalculator.csproj", "{49BCEF89-C37E-418E-9F22-9FCD9D622DB1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,6 +22,10 @@ Global
 		{6DC72B4A-42EF-4D93-BA67-8F0F7F01268E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6DC72B4A-42EF-4D93-BA67-8F0F7F01268E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6DC72B4A-42EF-4D93-BA67-8F0F7F01268E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49BCEF89-C37E-418E-9F22-9FCD9D622DB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49BCEF89-C37E-418E-9F22-9FCD9D622DB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49BCEF89-C37E-418E-9F22-9FCD9D622DB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49BCEF89-C37E-418E-9F22-9FCD9D622DB1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

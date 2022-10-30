@@ -1,5 +1,4 @@
 ﻿using AFALXCourse.Lessons;
-using AFALXCourse.Lessons.Classes;
 
 Console.Write("Andrzej Frydryszak\n");
 Console.WriteLine("ALX Course");

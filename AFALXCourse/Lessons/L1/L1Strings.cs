@@ -46,7 +46,7 @@ namespace AFALXCourse.Lessons
 
             //string interpolation
             string concat3 = $"{word1} {word2} i dobrze się ma";
-            Console.WriteLine(concat3);  
+            Console.WriteLine(concat3);
         }
     }
 }
