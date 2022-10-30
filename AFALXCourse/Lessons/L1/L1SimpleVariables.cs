@@ -8,7 +8,7 @@ namespace AFALXCourse.Lessons
 {
     public class L1SimpleVariables
     {
-        public static void Test()
+        public static void Run()
         {
             bool whySoSerious = true;
             int x = 12;

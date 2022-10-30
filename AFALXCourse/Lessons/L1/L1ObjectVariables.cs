@@ -1,10 +1,10 @@
-﻿using AFALXCourse.Lessons.Classes;
+﻿using AFALXCourse.Lessons.L1.Classes;
 
 namespace AFALXCourse.Lessons
 {
     public static class L1ObjectVariables
     {
-        public static void Test1()
+        public static void Run()
         {
             Console.WriteLine("Variables");
             Dog dog = new Dog();

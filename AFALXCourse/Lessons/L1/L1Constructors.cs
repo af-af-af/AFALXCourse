@@ -1,4 +1,4 @@
-﻿using AFALXCourse.Lessons.Classes;
+﻿using AFALXCourse.Lessons.L1.Classes;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +9,7 @@ namespace AFALXCourse.Lessons
 {
     public class L1Constructors
     {
-        public static void Test()
+        public static void Run()
         {
             var spider = new Spider();
             spider.Color = "black";
