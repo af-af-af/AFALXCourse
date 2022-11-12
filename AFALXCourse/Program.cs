@@ -6,9 +6,6 @@ Console.Write("Andrzej Frydryszak\n");
 Console.WriteLine("ALX Course");
 Console.WriteLine("-------------------------");
 
-Console.WriteLine("Arrays");
-L1Arrays.Run1();
-Console.WriteLine("Lists");
-L1Lists.Run();
+L1Loops.RunWhile2();
 
 Console.WriteLine("-------------------------");
