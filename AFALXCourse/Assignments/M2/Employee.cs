@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AFALXCourse.Lessons.L2.Enums
+namespace AFALXCourse.Assignments.M2
 {
-    public enum ChessColor
+    public class Employee
     {
-        BLACK,
-        WHITE
+        public string Name;
+
     }
 }

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AFALXCourse.Lessons
+namespace AFALXCourse.Lessons.M1.L1
 {
     public class L1Strings
     {

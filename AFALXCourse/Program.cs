@@ -1,4 +1,4 @@
-﻿using AFALXCourse.Lessons.L2;
+﻿using AFALXCourse.Lessons.M1.L2;
 
 Console.WriteLine("-------------------------");
 Console.Write("Andrzej Frydryszak\n");

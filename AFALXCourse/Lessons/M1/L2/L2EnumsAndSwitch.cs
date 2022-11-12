@@ -1,11 +1,11 @@
-﻿using AFALXCourse.Lessons.L2.Enums;
+﻿using AFALXCourse.Lessons.M1.L2.Enums;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AFALXCourse.Lessons.L2
+namespace AFALXCourse.Lessons.M1.L2
 {
     public class L2EnumsAndSwitch
     {
