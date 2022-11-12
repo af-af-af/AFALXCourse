@@ -9,7 +9,6 @@
 
   <ItemGroup>
     <Folder Include="Assignments\M1\Classes\" />
-    <Folder Include="Lessons\M2\" />
   </ItemGroup>
 
 </Project>

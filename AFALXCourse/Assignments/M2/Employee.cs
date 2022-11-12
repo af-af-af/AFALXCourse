@@ -9,6 +9,5 @@ namespace AFALXCourse.Assignments.M2
     public class Employee
     {
         public string Name;
-
     }
 }
