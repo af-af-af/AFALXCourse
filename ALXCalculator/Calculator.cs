@@ -2,6 +2,18 @@
 {
     public class Calculator
     {
+        List<char> ValidChars;
+        char[] ValidOperatorArray = { '+', '-', '*', '/' };
+
+        public Calculator()
+        {
+            ValidChars = new List<char>();
+            ValidChars.Add('+');
+            ValidChars.Add('-');
+            ValidChars.Add('*');
+            ValidChars.Add('/');
+        }
+
         public void Run()
         {
             Console.WriteLine("Running calculator...\n");
@@ -12,13 +24,29 @@
             Console.WriteLine("/\tdivision \n");
             Console.Write("Choose operation: ");
             var operationCharacterInfo = Console.ReadKey();
-            Console.WriteLine();
-            Console.Write("X number: ");
-            var x = Double.Parse(Console.ReadLine());
-            Console.Write("Y number: ");
-            var y = Double.Parse(Console.ReadLine());
 
-            PerformOperation(operationCharacterInfo.KeyChar, x, y);
+            while (ValidOperationUsingArray(operationCharacterInfo.KeyChar))
+            {
+                Console.WriteLine();
+                Console.Write("X number: ");
+                var x = Double.Parse(Console.ReadLine());
+                Console.Write("Y number: ");
+                var y = Double.Parse(Console.ReadLine());
+                PerformOperation(operationCharacterInfo.KeyChar, x, y);
+                Console.Write("Choose operation: ");
+                operationCharacterInfo = Console.ReadKey();
+                Console.WriteLine();
+            }
+        }
+
+        private bool ValidOperationUsingList(char operationCharacter)
+        {
+            return ValidChars.Contains(operationCharacter);
+        }
+
+        private bool ValidOperationUsingArray(char operationCharacter)
+        {
+            return ValidOperatorArray.Contains(operationCharacter);
         }
 
         private void PerformOperation(char operationChar, double x, double y)
