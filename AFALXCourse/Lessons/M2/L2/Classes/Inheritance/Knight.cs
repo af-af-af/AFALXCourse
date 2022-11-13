@@ -12,7 +12,7 @@ namespace AFALXCourse.Lessons.M2.L2.Classes.Inheritance
         //override
         public void Move()
         {
-            Console.WriteLine("The Queen is moving...");
+            Console.WriteLine("The Knight is moving...");
         }
     }
 }
