@@ -23,6 +23,8 @@ namespace AFALXCourse.Lessons.M2.L2.Classes.Inheritance
         public void Present()
         {
             Console.WriteLine($"Color: {Color}");
+            Console.WriteLine($"Type: {Type}");
+            Console.WriteLine($"Is it alive: {IsAlive}");
             Console.WriteLine($"X position: {XPosition}");
             Console.WriteLine($"Y position: {YPosition}");
         }
