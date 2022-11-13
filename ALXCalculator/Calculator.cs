@@ -1,6 +1,8 @@
-﻿namespace ALXCalculator
+﻿using ALXCalculator.Interfaces;
+
+namespace ALXCalculator
 {
-    public class Calculator
+    public class Calculator : ICalculator
     {
         List<char> ValidChars;
         char[] ValidOperatorArray = { '+', '-', '*', '/' };
@@ -81,12 +83,12 @@
             return x - y;
         }
 
-        public double Multiply(double x, double y)
+        private double Multiply(double x, double y)
         {
             return x * y;
         }
 
-        public double Divide(double x, double y)
+        private double Divide(double x, double y)
         {
             return x / y;
         }

@@ -7,7 +7,7 @@ Console.Write("Andrzej Frydryszak\n");
 Console.WriteLine("ALX Course");
 Console.WriteLine("-------------------------");
 
-L2Encapsulation.Run();
+L2Inheritance.Run();
 
 Console.WriteLine();
 Console.WriteLine("-------------------------");
