@@ -6,7 +6,7 @@ namespace AFALXCourse.Lessons.M2.L2.Classes.Inheritance
     {
         public Knight() : base()
         {
-            Type = ChessFigureType.BISHOP;
+            Type = ChessFigureType.KNIGHT;
         }
 
         //override
