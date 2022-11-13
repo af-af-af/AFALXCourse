@@ -9,6 +9,11 @@
 
   <ItemGroup>
     <Folder Include="Assignments\M1\Classes\" />
+    <Folder Include="Lessons\M2\L2\Abstract\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CommonFunctionalities\CommonFunctionalities.csproj" />
   </ItemGroup>
 
 </Project>

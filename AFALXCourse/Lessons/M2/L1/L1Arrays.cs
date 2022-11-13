@@ -42,6 +42,16 @@ namespace AFALXCourse.Lessons.M2.L1
             ShowArray(shoppingArray);
         }
 
+        public static void Run3()
+        {
+            int[,] intMatrix = new int[3, 2];
+            int[,] intMatrix1 = { { 1, 2 }, { 3, 4 } };
+            int[,] intMatrix2 = { { 1, 2, 3 }, { 3, 4, 7 }, { 1, 1, 1 }, { 2, 3, 5} };
+
+            Show2DArray(intMatrix2);
+        }
+
+
         public static void ShowArray(string[] array)
         {
             Console.WriteLine($"Number of elements: {array.Length}");
@@ -60,9 +70,16 @@ namespace AFALXCourse.Lessons.M2.L1
             Console.WriteLine();
         }
 
-        public static void Show2DArray()
+        public static void Show2DArray(int[,] matrix)
         {
-            //
+            for (int iterator=0; iterator< matrix.GetLength(0); iterator++)
+            {
+                for (int iterator1 = 0; iterator1 < matrix.GetLength(1); iterator1++)
+                {
+                    Console.Write($"{matrix[iterator,iterator1]} ");
+                }
+                Console.WriteLine();
+            }
         }
     }
 }

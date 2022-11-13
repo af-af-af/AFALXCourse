@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AFALXCourse.Assignments.M2
+namespace AFALXCourse.Assignments.M2.L2
 {
-    public class Employee
+    public class Book
     {
-        public string Name;
+        //5 properties
+        public  string Genre { get; set; }
     }
 }

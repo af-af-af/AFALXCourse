@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AFALXCourse.Assignments.M2
+namespace AFALXCourse.Assignments.M2.L1
 {
     public class SeniorityService
     {
