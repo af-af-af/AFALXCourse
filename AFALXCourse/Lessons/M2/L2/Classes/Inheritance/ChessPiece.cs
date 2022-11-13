@@ -2,10 +2,10 @@
 
 namespace AFALXCourse.Lessons.M2.L2.Classes.Inheritance
 {
-    public class ChessPiece
+    public abstract class ChessPiece
     {
-        public ChessColor Color { get; set; }
-        public ChessFigureType Type { get; set; }
+        public ChessColor? Color { get; set; }
+        public ChessFigureType? Type { get; set; }
         public int XPosition { get; set; }
         public int YPosition { get; set; }
         public bool IsAlive { get; set; }
