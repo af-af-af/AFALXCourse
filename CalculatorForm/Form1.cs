@@ -1,3 +1,4 @@
+using CalculatorForm.Services;
 using CalculatorForm.Services.Interfaces;
 using System.Text;
 
@@ -11,6 +12,7 @@ namespace CalculatorForm
         public CalculatorForm()
         {
             ExpressionBuilder = new StringBuilder();
+            ExpressionService = new ExpressionService();
             ExpressionBuilder.Clear();
             InitializeComponent();
         }
@@ -41,6 +43,8 @@ namespace CalculatorForm
 
         private void EqualsButton_Click(object sender, EventArgs e)
         {
+            Button button = (Button)sender;
+            AppendExpression(button.Text);
             var expression = ResultTextBox.Text;
             var result = ExpressionService.ProcessExpression(expression);
             ResultTextBox.Text = result.ToString();
