@@ -39,6 +39,7 @@ namespace CalculatorForm
         {
             ExpressionBuilder.Clear();
             ResultTextBox.Text = ExpressionBuilder.ToString();
+            ResultTextBox.Font = new Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
         }
 
         private void EqualsButton_Click(object sender, EventArgs e)
@@ -55,6 +56,12 @@ namespace CalculatorForm
         {
             ExpressionBuilder.Append(expressionPart);
             ResultTextBox.Text = ExpressionBuilder.ToString();
+            var textLenght = TextRenderer.MeasureText(ExpressionBuilder.ToString(), ResultTextBox.Font);
+            while (textLenght.Width > ResultTextBox.Width)
+            {
+                ResultTextBox.Font = new Font(ResultTextBox.Font.FontFamily, ResultTextBox.Font.Size - 1f);
+                textLenght = TextRenderer.MeasureText(ExpressionBuilder.ToString(), ResultTextBox.Font);
+            }
         }
     }
 }

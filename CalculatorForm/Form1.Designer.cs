@@ -54,9 +54,10 @@
             this.ResultTextBox.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ResultTextBox.Location = new System.Drawing.Point(12, 12);
             this.ResultTextBox.Name = "ResultTextBox";
-            this.ResultTextBox.Size = new System.Drawing.Size(274, 50);
+            this.ResultTextBox.Size = new System.Drawing.Size(274, 55);
             this.ResultTextBox.TabIndex = 0;
             this.ResultTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.ResultTextBox.AutoSize = false;
             // 
             // Key7Button
             // 
@@ -288,7 +289,6 @@
             this.Name = "CalculatorForm";
             this.Text = "Calculator";
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
