@@ -1,5 +1,5 @@
-using CalculatorForm.Services;
-using CalculatorForm.Services.Interfaces;
+using CommonFunctionalities.Services;
+using CommonFunctionalities.Services.Interfaces;
 using System.Text;
 
 namespace CalculatorForm
@@ -12,7 +12,7 @@ namespace CalculatorForm
         public CalculatorForm()
         {
             ExpressionBuilder = new StringBuilder();
-            ExpressionService = new ExpressionService();
+            ExpressionService = new ExpressionServiceDecimal();
             ExpressionBuilder.Clear();
             InitializeComponent();
         }
@@ -48,7 +48,8 @@ namespace CalculatorForm
             AppendExpression(button.Text);
             var expression = ResultTextBox.Text;
             var result = ExpressionService.ProcessExpression(expression);
-            ResultTextBox.Text = result.ToString();
+            
+            ResultTextBox.Text = result;
             ExpressionBuilder.Clear();
         }
 
