@@ -16,7 +16,7 @@ namespace CalculatorForm.Services
             List<double> numbers = new List<double>();
             List<char> operations = new List<char>();
             var numberBuilder = new StringBuilder();
-            expression.Replace(',', '.');
+            expression = expression.Replace(',', '.');
             var expressionArray = expression.ToCharArray();
             
             for(int i = 0; i < expressionArray.Length; i++)
