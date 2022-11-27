@@ -1,3 +1,5 @@
+using CourseFormApp.Exceptions;
+
 namespace CourseFormApp
 {
     internal static class Program
@@ -8,10 +10,20 @@ namespace CourseFormApp
         [STAThread]
         static void Main()
         {
-            // To customize application configuration such as set high DPI settings or default font,
-            // see https://aka.ms/applicationconfiguration.
+            var log = string.Empty;
             ApplicationConfiguration.Initialize();
-            Application.Run(new CourseFormApp());
+            try
+            {
+                Application.Run(new CourseFormApp());
+            }
+            catch(OurOwnException ex)
+            {
+                log = ex.Message;
+            }
+            catch(Exception ex)
+            {
+                log = ex.Message;
+            }
         }
     }
 }
