@@ -57,17 +57,17 @@ namespace CourseFormApp
                 var result = PerformOperation(Convert.ToDouble(XNumberTextBox.Text),
                                               Convert.ToDouble(YNumberTextBox.Text));
                 ResultTextBox.Text = result.ToString();
-                LogTextBox.Text = "Operation performed successfully!";
+                LogTextBox.Text += "Operation performed successfully!\r\n";
             }
             catch(Exception ex)
             {
-                var exceptionMessage = "Exception caught!";
-                LogTextBox.Text = exceptionMessage;
-                ResultTextBox.Text = "Invalid operation!";
+                var exceptionMessage = "Exception caught!\r\n";
+                LogTextBox.Text += exceptionMessage;
+                ResultTextBox.Text = "Invalid operation!\r\n";
             }
             finally
             {
-                LogTextBox.Text = "Operation Performed...";
+                LogTextBox.Text += "Operation Performed...\r\n";
             }
         }
 

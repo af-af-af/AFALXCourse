@@ -70,7 +70,7 @@
             // RestartButton
             // 
             this.RestartButton.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.RestartButton.Location = new System.Drawing.Point(557, 363);
+            this.RestartButton.Location = new System.Drawing.Point(420, 353);
             this.RestartButton.Name = "RestartButton";
             this.RestartButton.Size = new System.Drawing.Size(109, 62);
             this.RestartButton.TabIndex = 1;
@@ -81,7 +81,7 @@
             // ExitButton
             // 
             this.ExitButton.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ExitButton.Location = new System.Drawing.Point(672, 363);
+            this.ExitButton.Location = new System.Drawing.Point(535, 353);
             this.ExitButton.Name = "ExitButton";
             this.ExitButton.Size = new System.Drawing.Size(109, 62);
             this.ExitButton.TabIndex = 2;
@@ -92,7 +92,7 @@
             // ShutdownButton
             // 
             this.ShutdownButton.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ShutdownButton.Location = new System.Drawing.Point(672, 295);
+            this.ShutdownButton.Location = new System.Drawing.Point(535, 285);
             this.ShutdownButton.Name = "ShutdownButton";
             this.ShutdownButton.Size = new System.Drawing.Size(109, 62);
             this.ShutdownButton.TabIndex = 3;
@@ -102,7 +102,7 @@
             // 
             // HeightTextBox
             // 
-            this.HeightTextBox.Location = new System.Drawing.Point(498, 108);
+            this.HeightTextBox.Location = new System.Drawing.Point(420, 30);
             this.HeightTextBox.MaxLength = 3;
             this.HeightTextBox.Name = "HeightTextBox";
             this.HeightTextBox.Size = new System.Drawing.Size(226, 23);
@@ -112,7 +112,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(498, 90);
+            this.label1.Location = new System.Drawing.Point(420, 12);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(101, 15);
             this.label1.TabIndex = 5;
@@ -121,7 +121,7 @@
             // HeightButton
             // 
             this.HeightButton.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.HeightButton.Location = new System.Drawing.Point(498, 137);
+            this.HeightButton.Location = new System.Drawing.Point(420, 59);
             this.HeightButton.Name = "HeightButton";
             this.HeightButton.Size = new System.Drawing.Size(75, 23);
             this.HeightButton.TabIndex = 6;
@@ -132,7 +132,7 @@
             // BsodButton
             // 
             this.BsodButton.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.BsodButton.Location = new System.Drawing.Point(557, 295);
+            this.BsodButton.Location = new System.Drawing.Point(420, 285);
             this.BsodButton.Name = "BsodButton";
             this.BsodButton.Size = new System.Drawing.Size(109, 62);
             this.BsodButton.TabIndex = 7;
@@ -282,7 +282,8 @@
             this.LogTextBox.Multiline = true;
             this.LogTextBox.Name = "LogTextBox";
             this.LogTextBox.ReadOnly = true;
-            this.LogTextBox.Size = new System.Drawing.Size(309, 214);
+            this.LogTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.LogTextBox.Size = new System.Drawing.Size(258, 214);
             this.LogTextBox.TabIndex = 2;
             // 
             // label4
@@ -300,7 +301,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(789, 435);
+            this.ClientSize = new System.Drawing.Size(660, 435);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.LogTextBox);
             this.Controls.Add(this.groupBox1);
