@@ -22,7 +22,7 @@ namespace CalculatorForm
             ExpressionBuilder.Append("this ");
             ExpressionBuilder.Append("is ");
             ExpressionBuilder.Append("a ");
-            ExpressionBuilder.Append("string builder. ");
+            ExpressionBuilder.Append("string builder.");
             ResultTextBox.Text = ExpressionBuilder.ToString();
             ExpressionBuilder.Clear();
         }
@@ -30,17 +30,7 @@ namespace CalculatorForm
         private void ExpressionButton_Click(object sender, EventArgs e)
         {
             Button button = (Button)sender;
-
-            ExpressionBuilder.Append(button.Text);
-            if (ResultTextBox.Text == "0")
-            {
-                ResultTextBox.Text = "";
-                ResultTextBox.Text += button.Text;
-            }
-            else
-            {
-                ResultTextBox.Text += button.Text;
-            }
+            AppendExpression(button.Text);
         }
 
         private void ClearButton_Click(object sender, EventArgs e)
