@@ -9,3 +9,6 @@ demo.RunSelectAll();
 Console.WriteLine("--------------------------------");
 demo.RunSelectDefinedColumnSet("first_name", "email");
 Console.WriteLine("--------------------------------");
+//demo.InsertEmployeeDemo();
+Console.WriteLine("--------------------------------");
+demo.InsertManyEmployeesDemo();
