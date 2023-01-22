@@ -28,11 +28,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Assignments", "Assignments"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MovingButton", "MovingButton\MovingButton.csproj", "{4DE88B6D-F247-479F-BD96-0F14F880BFBB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorForm", "CalculatorForm\CalculatorForm.csproj", "{EEA21462-7D07-4D72-9991-4B073DB3FFD7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculatorForm", "CalculatorForm\CalculatorForm.csproj", "{EEA21462-7D07-4D72-9991-4B073DB3FFD7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ConsoleApps", "ConsoleApps", "{63298651-D044-47E3-BFD6-90E7D44F632C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorConsole", "CalculatorConsole\CalculatorConsole.csproj", "{90D93126-455B-4C56-A20C-60DC38B9EFBC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculatorConsole", "CalculatorConsole\CalculatorConsole.csproj", "{90D93126-455B-4C56-A20C-60DC38B9EFBC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DBInteractions", "DBInteractions", "{38F9B0AA-72E9-4856-918C-8F6F3CC3A454}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ADODemoConsoleApp", "ADODemoConsoleApp\ADODemoConsoleApp.csproj", "{437FC0CB-3208-46F9-91D7-F5CC281D5859}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -80,6 +84,10 @@ Global
 		{90D93126-455B-4C56-A20C-60DC38B9EFBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90D93126-455B-4C56-A20C-60DC38B9EFBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{90D93126-455B-4C56-A20C-60DC38B9EFBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{437FC0CB-3208-46F9-91D7-F5CC281D5859}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{437FC0CB-3208-46F9-91D7-F5CC281D5859}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{437FC0CB-3208-46F9-91D7-F5CC281D5859}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{437FC0CB-3208-46F9-91D7-F5CC281D5859}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -94,6 +102,7 @@ Global
 		{4DE88B6D-F247-479F-BD96-0F14F880BFBB} = {11734B7B-F9B4-4EC1-A77A-9103F91E719E}
 		{EEA21462-7D07-4D72-9991-4B073DB3FFD7} = {6C32E675-B855-4DFE-92DB-41FB3CFAD4F0}
 		{90D93126-455B-4C56-A20C-60DC38B9EFBC} = {63298651-D044-47E3-BFD6-90E7D44F632C}
+		{437FC0CB-3208-46F9-91D7-F5CC281D5859} = {38F9B0AA-72E9-4856-918C-8F6F3CC3A454}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C6F43661-1260-47E1-B01E-7B79D229A933}

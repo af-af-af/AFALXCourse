@@ -57,4 +57,541 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Key9Button.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="Key8Button.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 50</value>
+  </data>
+  <data name="SubstractButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 50</value>
+  </data>
+  <data name="&gt;&gt;Key5Button.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="MultiplyButton.Text" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="&gt;&gt;CommaButton.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;Key8Button.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Key7Button.Name" xml:space="preserve">
+    <value>Key7Button</value>
+  </data>
+  <data name="MultiplyButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 24pt</value>
+  </data>
+  <data name="ClearButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 24pt</value>
+  </data>
+  <data name="Key6Button.Text" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="StringBuilderButton.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;Key1Button.Name" xml:space="preserve">
+    <value>Key1Button</value>
+  </data>
+  <data name="&gt;&gt;DivideButton.Name" xml:space="preserve">
+    <value>DivideButton</value>
+  </data>
+  <data name="DivideButton.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="StringBuilderButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 15.75pt</value>
+  </data>
+  <data name="ResultTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="StringBuilderButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>271, 50</value>
+  </data>
+  <data name="&gt;&gt;CommaButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="AddButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 24pt</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;EqualsButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Key8Button.Text" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;StringBuilderButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Key1Button.Text" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="Key8Button.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="Key5Button.Location" type="System.Drawing.Point, System.Drawing">
+    <value>68, 124</value>
+  </data>
+  <data name="SubstractButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>180, 124</value>
+  </data>
+  <data name="&gt;&gt;Key9Button.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="Key3Button.Text" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;SubstractButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="MultiplyButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 50</value>
+  </data>
+  <data name="ClearButton.Text" xml:space="preserve">
+    <value>C</value>
+  </data>
+  <data name="&gt;&gt;Key8Button.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Key0Button.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="MultiplyButton.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="Key6Button.Location" type="System.Drawing.Point, System.Drawing">
+    <value>124, 124</value>
+  </data>
+  <data name="&gt;&gt;Key3Button.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="Key6Button.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 24pt</value>
+  </data>
+  <data name="CommaButton.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;Key7Button.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="ResultTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="ClearButton.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="Key5Button.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 50</value>
+  </data>
+  <data name="Key1Button.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 180</value>
+  </data>
+  <data name="MultiplyButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>180, 180</value>
+  </data>
+  <data name="&gt;&gt;Key0Button.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SubstractButton.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="AddButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 50</value>
+  </data>
+  <data name="&gt;&gt;SubstractButton.Name" xml:space="preserve">
+    <value>SubstractButton</value>
+  </data>
+  <data name="Key8Button.Location" type="System.Drawing.Point, System.Drawing">
+    <value>68, 68</value>
+  </data>
+  <data name="&gt;&gt;ResultTextBox.Name" xml:space="preserve">
+    <value>ResultTextBox</value>
+  </data>
+  <data name="&gt;&gt;EqualsButton.Name" xml:space="preserve">
+    <value>EqualsButton</value>
+  </data>
+  <data name="&gt;&gt;Key3Button.Name" xml:space="preserve">
+    <value>Key3Button</value>
+  </data>
+  <data name="&gt;&gt;Key9Button.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ClearButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 50</value>
+  </data>
+  <data name="EqualsButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>236, 68</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ResultTextBox.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="&gt;&gt;StringBuilderButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="Key7Button.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 50</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>CalculatorForm</value>
+  </data>
+  <data name="Key3Button.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;Key6Button.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="CommaButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 24pt</value>
+  </data>
+  <data name="&gt;&gt;DivideButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="Key0Button.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;AddButton.Name" xml:space="preserve">
+    <value>AddButton</value>
+  </data>
+  <data name="&gt;&gt;Key2Button.Name" xml:space="preserve">
+    <value>Key2Button</value>
+  </data>
+  <data name="DivideButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 24pt</value>
+  </data>
+  <data name="Key3Button.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 24pt</value>
+  </data>
+  <data name="&gt;&gt;Key8Button.Name" xml:space="preserve">
+    <value>Key8Button</value>
+  </data>
+  <data name="Key3Button.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 50</value>
+  </data>
+  <data name="Key4Button.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="ClearButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 236</value>
+  </data>
+  <data name="&gt;&gt;AddButton.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;MultiplyButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="Key5Button.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 24pt</value>
+  </data>
+  <data name="Key9Button.Location" type="System.Drawing.Point, System.Drawing">
+    <value>124, 68</value>
+  </data>
+  <data name="&gt;&gt;Key5Button.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="Key0Button.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 24pt</value>
+  </data>
+  <data name="&gt;&gt;Key0Button.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;StringBuilderButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="Key4Button.Text" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="StringBuilderButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 292</value>
+  </data>
+  <data name="&gt;&gt;ClearButton.Name" xml:space="preserve">
+    <value>ClearButton</value>
+  </data>
+  <data name="Key4Button.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 24pt</value>
+  </data>
+  <data name="&gt;&gt;MultiplyButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Key1Button.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="Key0Button.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="SubstractButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 24pt</value>
+  </data>
+  <data name="&gt;&gt;Key4Button.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Key7Button.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;Key7Button.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DivideButton.Text" xml:space="preserve">
+    <value>/</value>
+  </data>
+  <data name="Key0Button.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 50</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>295, 354</value>
+  </data>
+  <data name="SubstractButton.Text" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ResultTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>274, 55</value>
+  </data>
+  <data name="&gt;&gt;Key2Button.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="CommaButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>124, 236</value>
+  </data>
+  <data name="CommaButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 50</value>
+  </data>
+  <data name="&gt;&gt;ClearButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>7, 15</value>
+  </data>
+  <data name="EqualsButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 24pt</value>
+  </data>
+  <data name="&gt;&gt;DivideButton.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="Key0Button.Location" type="System.Drawing.Point, System.Drawing">
+    <value>68, 236</value>
+  </data>
+  <data name="EqualsButton.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;Key1Button.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="DivideButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>180, 236</value>
+  </data>
+  <data name="&gt;&gt;Key2Button.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Key6Button.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Key8Button.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 24pt</value>
+  </data>
+  <data name="Key2Button.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 24pt</value>
+  </data>
+  <data name="&gt;&gt;Key3Button.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Key1Button.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;Key8Button.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;MultiplyButton.Name" xml:space="preserve">
+    <value>MultiplyButton</value>
+  </data>
+  <data name="DivideButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 50</value>
+  </data>
+  <data name="Key7Button.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;SubstractButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="AddButton.Text" xml:space="preserve">
+    <value>+</value>
+  </data>
+  <data name="&gt;&gt;AddButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Key3Button.Location" type="System.Drawing.Point, System.Drawing">
+    <value>124, 180</value>
+  </data>
+  <data name="EqualsButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 218</value>
+  </data>
+  <data name="EqualsButton.Text" xml:space="preserve">
+    <value>=</value>
+  </data>
+  <data name="Key7Button.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 24pt</value>
+  </data>
+  <data name="StringBuilderButton.Text" xml:space="preserve">
+    <value>StringBuilder Demo</value>
+  </data>
+  <data name="&gt;&gt;StringBuilderButton.Name" xml:space="preserve">
+    <value>StringBuilderButton</value>
+  </data>
+  <data name="&gt;&gt;Key4Button.Name" xml:space="preserve">
+    <value>Key4Button</value>
+  </data>
+  <data name="&gt;&gt;Key9Button.Name" xml:space="preserve">
+    <value>Key9Button</value>
+  </data>
+  <data name="&gt;&gt;CommaButton.Name" xml:space="preserve">
+    <value>CommaButton</value>
+  </data>
+  <data name="&gt;&gt;SubstractButton.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;AddButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Key4Button.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;Key1Button.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Key6Button.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;ResultTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Key9Button.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="AddButton.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;CommaButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Key2Button.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;Key6Button.Name" xml:space="preserve">
+    <value>Key6Button</value>
+  </data>
+  <data name="Key1Button.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 24pt</value>
+  </data>
+  <data name="AddButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>180, 68</value>
+  </data>
+  <data name="&gt;&gt;MultiplyButton.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="Key2Button.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 50</value>
+  </data>
+  <data name="Key1Button.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 50</value>
+  </data>
+  <data name="&gt;&gt;Key5Button.Name" xml:space="preserve">
+    <value>Key5Button</value>
+  </data>
+  <data name="Key6Button.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 50</value>
+  </data>
+  <data name="Key5Button.Text" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="Key9Button.Text" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="ResultTextBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 24pt</value>
+  </data>
+  <data name="&gt;&gt;EqualsButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="Key2Button.Text" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Calculator</value>
+  </data>
+  <data name="&gt;&gt;Key0Button.Name" xml:space="preserve">
+    <value>Key0Button</value>
+  </data>
+  <data name="&gt;&gt;ClearButton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;Key5Button.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Key6Button.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="Key4Button.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 50</value>
+  </data>
+  <data name="&gt;&gt;ClearButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="Key2Button.Location" type="System.Drawing.Point, System.Drawing">
+    <value>68, 180</value>
+  </data>
+  <data name="CommaButton.Text" xml:space="preserve">
+    <value>,</value>
+  </data>
+  <data name="&gt;&gt;ResultTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Key7Button.Text" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="Key9Button.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 50</value>
+  </data>
+  <data name="&gt;&gt;Key3Button.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DivideButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Key9Button.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 24pt</value>
+  </data>
+  <data name="Key5Button.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;Key4Button.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="Key7Button.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 68</value>
+  </data>
+  <data name="Key4Button.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 124</value>
+  </data>
+  <data name="&gt;&gt;EqualsButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;ResultTextBox.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;Key2Button.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, System.Private.CoreLib, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
+    <value>en</value>
+  </metadata>
 </root>
