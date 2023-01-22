@@ -1,14 +1,17 @@
-﻿using System.Data.SqlClient;
+﻿using ADODemoConsoleApp.Services;
+using System.Data.SqlClient;
 
 namespace ADODemoConsoleApp
 {
     public class ADODemo
     {
         private string _connectionString;
+        private CompanyDbRepository _companyDbRepository;
 
         public ADODemo(string connectionString)
         {
             _connectionString = connectionString;
+            _companyDbRepository = new CompanyDbRepository(connectionString);
         }
 
         public void RunSelectAll()
@@ -65,6 +68,11 @@ namespace ADODemoConsoleApp
                 }
                 connection.Close();
             }
+        }
+
+        public void InsertEmployeeDemo()
+        {
+
         }
     }
 }
