@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Data.Common;
 using System.Data.SqlClient;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -44,6 +45,45 @@ namespace ADODemoConsoleApp.Services
                 }
                 
             }
+        }
+
+        public List<Employee> GetAllEmployees() 
+        { 
+            var employees = new List<Employee>();
+            var queryString = "select * from employees";
+
+            using (var connection = new SqlConnection(_connectionString))
+            {
+                var sqlCommand = new SqlCommand(queryString, connection);
+                try
+                {
+                    connection.Open();
+                    var sqlDataReader = sqlCommand.ExecuteReader();
+
+                    while (sqlDataReader.Read())
+                    {
+                        var employee = new Employee
+                        {
+                            Id = Guid.Parse(sqlDataReader[0].ToString()),
+                            FirstName = sqlDataReader[1].ToString(),
+                            LastName = sqlDataReader[2].ToString(),
+                            Email = sqlDataReader[3].ToString(),
+                            DepartmentId = Guid.Parse(sqlDataReader[4].ToString())
+                        };
+                        employees.Add(employee);
+                    }
+                    sqlDataReader.Close();
+
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                    Console.WriteLine(ex.StackTrace);
+                }
+                connection.Close();
+            }
+
+            return employees;
         }
     }
 }
