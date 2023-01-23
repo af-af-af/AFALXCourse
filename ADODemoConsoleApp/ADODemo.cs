@@ -7,12 +7,12 @@ namespace ADODemoConsoleApp
     public class ADODemo
     {
         private string _connectionString;
-        private CompanyDbRepository _companyDbRepository;
+        private EmployeeRepository _employeeRepository;
 
         public ADODemo(string connectionString)
         {
             _connectionString = connectionString;
-            _companyDbRepository = new CompanyDbRepository(connectionString);
+            _employeeRepository = new EmployeeRepository(connectionString);
         }
 
         public void RunSelectAll()
@@ -82,7 +82,7 @@ namespace ADODemoConsoleApp
                 DepartmentId = Guid.Parse("886EEE76-1508-44A6-A172-C2A5255B9DA6")
             };
 
-            _companyDbRepository.InsertEmployeeToDb(employee);
+            _employeeRepository.InsertEmployeeToDb(employee);
             RunSelectAll();
         }
 
@@ -110,7 +110,7 @@ namespace ADODemoConsoleApp
 
             foreach (var employee in employeeList)
             {
-                _companyDbRepository.InsertEmployeeToDb(employee);
+                _employeeRepository.InsertEmployeeToDb(employee);
                 Console.WriteLine("Employee inserted...");
             }
         }

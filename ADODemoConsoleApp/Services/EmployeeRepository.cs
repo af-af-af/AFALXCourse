@@ -10,11 +10,11 @@ using System.Threading.Tasks;
 
 namespace ADODemoConsoleApp.Services
 {
-    public class CompanyDbRepository
+    public class EmployeeRepository
     {
         private string _connectionString;
 
-        public CompanyDbRepository(string connectionString) 
+        public EmployeeRepository(string connectionString) 
         {
             _connectionString = connectionString;
         }
@@ -84,6 +84,50 @@ namespace ADODemoConsoleApp.Services
             }
 
             return employees;
+        }
+
+        public Employee GetById(Guid Id)
+        {
+            var queryString = "select * from employees where employees.id=@id";
+            var employees = new List<Employee>();
+
+            using (var connection = new SqlConnection(_connectionString))
+            {
+                var sqlCommand = new SqlCommand(queryString, connection);
+                sqlCommand.Parameters.AddWithValue("@id", Id.ToString());
+
+                try
+                {
+                    connection.Open();
+                    var sqlDataReader = sqlCommand.ExecuteReader();
+
+                    while (sqlDataReader.Read())
+                    {
+                        var employee = new Employee
+                        {
+                            Id = Guid.Parse(sqlDataReader[0].ToString()),
+                            FirstName = sqlDataReader[1].ToString(),
+                            LastName = sqlDataReader[2].ToString(),
+                            Email = sqlDataReader[3].ToString(),
+                            DepartmentId = Guid.Parse(sqlDataReader[4].ToString())
+                        };
+                        employees.Add(employee);
+                    }
+                    sqlDataReader.Close();
+                    return employees.FirstOrDefault();
+
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                    Console.WriteLine(ex.StackTrace);
+                    throw;
+                }
+                finally 
+                {
+                    connection.Close();
+                }
+            }
         }
     }
 }
