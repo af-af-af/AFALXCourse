@@ -58,7 +58,10 @@ namespace HttpClientShowcase
 
         public void RunDeserialization(BookJsonSamplesHolder jsonStrings)
         {
-            throw new NotImplementedException();
+            var book = JsonConvert.DeserializeObject<Book>(jsonStrings.BookJson);
+            var bookBox = JsonConvert.DeserializeObject<BookBox>(jsonStrings.BookBoxJson);
+            var bookShelf = JsonConvert.DeserializeObject<BookShelf>(jsonStrings.BookShelfJson);
+            dynamic book1 = JsonConvert.DeserializeObject(jsonStrings.BookShelfJson);
         }
     }
 }
