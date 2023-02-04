@@ -73,8 +73,10 @@ namespace HttpClientShowcase
             var requestContent = new StringContent(requestJson);
             var requestMessage = new HttpRequestMessage(HttpMethod.Post, baseRequestUri);
             requestMessage.Content = requestContent;
+            requestMessage.Headers.Add("x-functions-key", "<api key>");
             var result = await _httpClient.SendAsync(requestMessage);
-            Console.WriteLine(result);
+            var resultContent = await result.Content.ReadAsStringAsync();
+            Console.WriteLine(resultContent);
         }
 
         public async Task<string> Hello(string name)

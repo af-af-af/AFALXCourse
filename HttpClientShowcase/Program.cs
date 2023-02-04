@@ -16,8 +16,8 @@ await httpClientDemo.PredictGender("Ala");
 
 var email = new Email
 {
-    To = "",
+    To = "awkwiecin@gmail.com",
     Subject = "App test",
-    Message = "Alx course app sends regards O.o"
+    Message = "Alx course app sends regards O.o Hello moto yo"
 };
 await httpClientDemo.SendEmail(email);
