@@ -23,7 +23,7 @@ namespace HttpClientShowcase
             var response = await _httpClient.GetAsync(requestUri);
             var responseContentJson = await response.Content.ReadAsStringAsync();
             var joke = JsonConvert.DeserializeObject<JokeResponse>(responseContentJson);
-            Console.WriteLine($"Joke for today:\n{joke.Setup}\n -> {joke.Punchline}");
+            Console.WriteLine($"Joke for today:\n{joke.Setup}\n -> {joke.Punchline}\n");
         }
 
         public async Task GetRandomCatInfo()
@@ -55,7 +55,15 @@ namespace HttpClientShowcase
 
         public async Task PredictGender(string name)
         {
-            throw new NotImplementedException();
+            var baseRequestUri = "https://api.genderize.io";
+            var uriBuilder = new UriBuilder(baseRequestUri);
+            uriBuilder.Query = $"name={name}";
+            var uri = uriBuilder.Uri;
+            var response = await _httpClient.GetAsync(uri);
+            var responseContentJson = await response.Content.ReadAsStringAsync();
+            var genderPreditionResponse = JsonConvert.DeserializeObject<GenderPredictionResponse>(responseContentJson);
+            Console.WriteLine($"Name: {genderPreditionResponse.Name}\nGender: {genderPreditionResponse.Gender}" +
+                $"\nProbability: {genderPreditionResponse.Probability*100}%\n");
         }
 
         public async Task SendEmail(Email email)

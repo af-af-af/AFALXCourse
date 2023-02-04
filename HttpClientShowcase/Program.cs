@@ -11,3 +11,4 @@ var httpClientDemo = new HttpClientDemo(client);
 await httpClientDemo.GetRandomJoke();
 await httpClientDemo.GetRandomCatInfo();
 await httpClientDemo.GetRandomDogImage();
+await httpClientDemo.PredictGender("Ala");
