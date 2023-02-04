@@ -68,7 +68,13 @@ namespace HttpClientShowcase
 
         public async Task SendEmail(Email email)
         {
-            throw new NotImplementedException();
+            var baseRequestUri = "https://cnemailingservice20230203214349.azurewebsites.net/api/CNEMailingFunction";
+            var requestJson = JsonConvert.SerializeObject(email); 
+            var requestContent = new StringContent(requestJson);
+            var requestMessage = new HttpRequestMessage(HttpMethod.Post, baseRequestUri);
+            requestMessage.Content = requestContent;
+            var result = await _httpClient.SendAsync(requestMessage);
+            Console.WriteLine(result);
         }
 
         public async Task<string> Hello(string name)
