@@ -6,7 +6,7 @@ namespace WebApi.Services
 {
     public class DepartmentRepository : IDepartmentRepository
     {
-        private const string _connectionString = "";
+        private const string _connectionString = "Data Source=DESKTOP-TTJ6DGH\\SQLEXPRESS;Initial Catalog=WebCompany;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
 
         public async Task Create(Department department)
         {
@@ -65,7 +65,7 @@ namespace WebApi.Services
         public async Task<Department> GetById(Guid Id)
         {
             var departments = new List<Department>();
-            var queryString = $"select * from Departments where Id = @id";
+            var queryString = "select * from Departments where Id = @id";
 
             using (var connection = new SqlConnection(_connectionString))
             {
@@ -90,8 +90,6 @@ namespace WebApi.Services
                 }
                 catch (Exception ex)
                 {
-                    Console.WriteLine(ex.Message);
-                    Console.WriteLine(ex.StackTrace);
                     throw;
                 }
             }
@@ -100,7 +98,7 @@ namespace WebApi.Services
         public async Task<Department> GetByName(string departmentName)
         {
             var departments = new List<Department>();
-            var queryString = $"select * from Departments where DepartmentName = @departmentName";
+            var queryString = "select * from Departments where DepartmentName = @departmentName";
 
             using (var connection = new SqlConnection(_connectionString))
             {

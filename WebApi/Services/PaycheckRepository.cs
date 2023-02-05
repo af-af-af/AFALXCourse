@@ -6,10 +6,10 @@ namespace WebApi.Services
 {
     public class PaycheckRepository : IPaycheckRepository
     {
-        private const string _connectionString = "";
+        private const string _connectionString = "Data Source=DESKTOP-TTJ6DGH\\SQLEXPRESS;Initial Catalog=WebCompany;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
         public async Task Create(Paycheck entity)
         {
-            var queryString = "insert into Paychecks(Id, PaycheckNumber) values(@id, @paycheckNumber),";
+            var queryString = "insert into Paychecks(Id, PaycheckNumber) values(@id, @paycheckNumber)";
 
             using (var connection = new SqlConnection(_connectionString))
             {

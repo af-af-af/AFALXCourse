@@ -7,21 +7,24 @@ namespace WebApi.Services
     public class EmployeeService : IEmployeeService
     {
         private ITaxService _taxService;
+        private IEmployeeRepository _employeeRepository;
+        private IDepartmentRepository _departmentRepository;
+        private IPaycheckRepository _paycheckRepository;
 
-        public EmployeeService(ITaxService taxService)
+        public EmployeeService(ITaxService taxService,
+                               IEmployeeRepository employeeRepository,
+                               IDepartmentRepository departmentRepository,
+                               IPaycheckRepository paycheckRepository)
         {
             _taxService = taxService;
+            _employeeRepository = employeeRepository;
+            _departmentRepository = departmentRepository;
+            _paycheckRepository = paycheckRepository;
         }
 
         public async Task AddEmployee(EmployeeDTO employeeDto)
         {
-            var employee1 = new EmployeeDTO
-            {
-                FirstName = employeeDto.FirstName,
-                LastName = employeeDto.LastName,
-                Email = employeeDto.Email,
-                DepartmentName = employeeDto.DepartmentName
-            };
+
         }
     }
 }

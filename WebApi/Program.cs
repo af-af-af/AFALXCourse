@@ -14,6 +14,9 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddSingleton<IEmployeeService, EmployeeService>();
 builder.Services.AddSingleton<ITaxService, TaxService>();
+builder.Services.AddTransient<IDepartmentRepository, DepartmentRepository>();
+builder.Services.AddTransient<IPaycheckRepository, PaycheckRepository>();
+builder.Services.AddTransient<IEmployeeRepository, EmployeeRepository>();
 
 var app = builder.Build();
 
