@@ -40,7 +40,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ADODemoConsoleApp", "ADODem
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebApps", "WebApps", "{2ECE4836-E2AE-4A8E-A827-DD37511C07F1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HttpClientShowcase", "HttpClientShowcase\HttpClientShowcase.csproj", "{1C8F3FDA-3A12-4B8B-9E5A-EADF4B6BC48C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HttpClientShowcase", "HttpClientShowcase\HttpClientShowcase.csproj", "{1C8F3FDA-3A12-4B8B-9E5A-EADF4B6BC48C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi", "WebApi\WebApi.csproj", "{0B800E18-FD1B-4DC4-B88C-AEB7342E0EEB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -96,6 +98,10 @@ Global
 		{1C8F3FDA-3A12-4B8B-9E5A-EADF4B6BC48C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1C8F3FDA-3A12-4B8B-9E5A-EADF4B6BC48C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1C8F3FDA-3A12-4B8B-9E5A-EADF4B6BC48C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B800E18-FD1B-4DC4-B88C-AEB7342E0EEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B800E18-FD1B-4DC4-B88C-AEB7342E0EEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B800E18-FD1B-4DC4-B88C-AEB7342E0EEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B800E18-FD1B-4DC4-B88C-AEB7342E0EEB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -112,6 +118,7 @@ Global
 		{90D93126-455B-4C56-A20C-60DC38B9EFBC} = {63298651-D044-47E3-BFD6-90E7D44F632C}
 		{437FC0CB-3208-46F9-91D7-F5CC281D5859} = {38F9B0AA-72E9-4856-918C-8F6F3CC3A454}
 		{1C8F3FDA-3A12-4B8B-9E5A-EADF4B6BC48C} = {2ECE4836-E2AE-4A8E-A827-DD37511C07F1}
+		{0B800E18-FD1B-4DC4-B88C-AEB7342E0EEB} = {2ECE4836-E2AE-4A8E-A827-DD37511C07F1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C6F43661-1260-47E1-B01E-7B79D229A933}
