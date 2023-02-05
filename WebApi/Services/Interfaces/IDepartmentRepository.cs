@@ -2,5 +2,8 @@
 
 namespace WebApi.Services.Interfaces
 {
-    public interface IDepartmentRepository : IRepository<Department> {}
+    public interface IDepartmentRepository : IRepository<Department> 
+    {
+        Task<Department> GetByName(string departmentName);
+    }
 }

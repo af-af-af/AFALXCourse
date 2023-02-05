@@ -96,5 +96,40 @@ namespace WebApi.Services
                 }
             }
         }
+
+        public async Task<Department> GetByName(string departmentName)
+        {
+            var departments = new List<Department>();
+            var queryString = $"select * from Departments where DepartmentName = @departmentName";
+
+            using (var connection = new SqlConnection(_connectionString))
+            {
+                var sqlCommand = new SqlCommand(queryString, connection);
+                sqlCommand.Parameters.AddWithValue("@departmentName", departmentName);
+                try
+                {
+                    connection.Open();
+                    var sqlDataReader = sqlCommand.ExecuteReader();
+
+                    while (sqlDataReader.Read())
+                    {
+                        var department = new Department
+                        {
+                            Id = Guid.Parse(sqlDataReader[0].ToString()),
+                            DepartmentName = sqlDataReader[1].ToString()
+                        };
+                        departments.Add(department);
+                    }
+                    sqlDataReader.Close();
+                    return departments.FirstOrDefault();
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                    Console.WriteLine(ex.StackTrace);
+                    throw;
+                }
+            }
+        }
     }
 }
