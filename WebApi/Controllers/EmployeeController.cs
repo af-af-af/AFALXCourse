@@ -19,39 +19,29 @@ namespace WebApi.Controllers
 
         // GET: api/<ValuesController1>
         [HttpGet]
-        public async Task<IEnumerable<Employee>> GetAll()
+        public async Task<List<Employee>> GetAll()
         {
-            return new List<Employee>() { new Employee 
-            {
-                Id = Guid.NewGuid(),
-                FirstName= "Test",
-                LastName= "TestLastName",
-                DepartmentId= Guid.NewGuid(),
-                PaycheckId= Guid.NewGuid(),
-                Email = "test@paparam.com"
-            } };
+            return await _employeeService.GetAll();
         }
 
         // GET api/<ValuesController1>/5
         [HttpGet("{id}")]
-        public async Task<Employee> Get(int id)
+        public async Task<Employee> Get(Guid id)
         {
-            return new Employee
-            {
-                Id = Guid.NewGuid(),
-                FirstName = "Test",
-                LastName = "TestLastName",
-                DepartmentId = Guid.NewGuid(),
-                PaycheckId = Guid.NewGuid(),
-                Email = "test@paparam.com"
-            };
-         }
+            return await _employeeService.GetEmployee(id);
+        }
 
         // POST api/<ValuesController1>
         [HttpPost]
         public async Task Post([FromQuery] EmployeeDTO employee)
         {
             await _employeeService.AddEmployee(employee);
+        }
+
+        [HttpPut]
+        public async Task Put([FromQuery] PaycheckAssessment assessment)
+        {
+            await _employeeService.AssessPayment(assessment);
         }
     }
 }

@@ -72,6 +72,43 @@ namespace WebApi.Services
             using (var connection = new SqlConnection(_connectionString))
             {
                 var sqlCommand = new SqlCommand(queryString, connection);
+                sqlCommand.Parameters.AddWithValue("@id", Id);
+                try
+                {
+                    connection.Open();
+                    var sqlDataReader = sqlCommand.ExecuteReader();
+
+                    while (sqlDataReader.Read())
+                    {
+                        var paycheck = new Paycheck
+                        {
+                            Id = Guid.Parse(sqlDataReader[0].ToString()),
+                            PaycheckNumber = sqlDataReader[1].ToString(),
+                            PaymentGross = Convert.ToDecimal(sqlDataReader[2]),
+                            PaymentNet = Convert.ToDecimal(sqlDataReader[3]),
+                            IsPaid = Convert.ToBoolean(sqlDataReader[4].ToString()),
+                        };
+                        paychecks.Add(paycheck);
+                    }
+                    sqlDataReader.Close();
+                    return paychecks.FirstOrDefault();
+                }
+                catch (Exception ex)
+                {
+                    throw;
+                }
+            }
+        }
+
+        public async Task<Paycheck> GetByNumber(string paycheckNumber)
+        {
+            var paychecks = new List<Paycheck>();
+            var queryString = "select * from Paychecks where Paychecks.PaycheckNumber=@paycheckNumber";
+
+            using (var connection = new SqlConnection(_connectionString))
+            {
+                var sqlCommand = new SqlCommand(queryString, connection);
+                sqlCommand.Parameters.AddWithValue("@paycheckNumber", paycheckNumber);
                 try
                 {
                     connection.Open();
@@ -101,7 +138,7 @@ namespace WebApi.Services
 
         public async Task UpdateSalary(Paycheck paycheck)
         {
-            var queryString = "update Paychecks set PaymentGross=@paymentGross and PaymentNet=@paymentNet where PaycheckNumber=@paycheckNumber";
+            var queryString = "update Paychecks set PaymentGross=@paymentGross, PaymentNet=@paymentNet where PaycheckNumber=@paycheckNumber";
 
             using (var connection = new SqlConnection(_connectionString))
             {

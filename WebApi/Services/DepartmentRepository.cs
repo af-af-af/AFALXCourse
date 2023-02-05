@@ -6,8 +6,7 @@ namespace WebApi.Services
 {
     public class DepartmentRepository : IDepartmentRepository
     {
-        private const string _connectionString = "Data Source=DESKTOP-TTJ6DGH\\SQLEXPRESS;Initial Catalog=WebCompany;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
-
+        private const string _connectionString = "<>";
         public async Task Create(Department department)
         {
             var queryString = "insert into Departments(Id, DepartmentName) values(@id, @name)";

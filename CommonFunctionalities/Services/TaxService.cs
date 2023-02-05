@@ -14,6 +14,13 @@ namespace CommonFunctionalities.Services
             return vatTax + governmentTax;
         }
 
+        public decimal CalculateTaxDecimal(decimal income)
+        {
+            var vatTax = CalculateVatDecimal(income);
+            var governmentTax = CalculateGovernmentTaxDecimal(income, vatTax);
+            return vatTax + governmentTax;
+        }
+
         private double CalculateGovernmentTax(double income, double vatTax)
         {
             return (income - vatTax) * GovernmentPercentage;
@@ -22,6 +29,16 @@ namespace CommonFunctionalities.Services
         private double CalculateVat(double income)
         {
             return income * VatPercentage;
+        }
+
+        private decimal CalculateGovernmentTaxDecimal(decimal income, decimal vatTax)
+        {
+            return (income - vatTax) * Convert.ToDecimal(GovernmentPercentage);
+        }
+
+        private decimal CalculateVatDecimal(decimal income)
+        {
+            return income * Convert.ToDecimal(VatPercentage);
         }
     }
 }

@@ -31,6 +31,24 @@ namespace WebApi.Services
             await _employeeRepository.Create(employee);
         }
 
+        public async Task<Employee> GetEmployee(Guid Id)
+        {
+            return await _employeeRepository.GetById(Id);
+        }
+
+        public async Task<List<Employee>> GetAll()
+        {
+            return await _employeeRepository.GetAll();
+        }
+
+        public async Task AssessPayment(PaycheckAssessment assessment)
+        {
+            var paycheck = await _paycheckRepository.GetByNumber(assessment.PaycheckNumber);
+            paycheck.PaymentGross = assessment.PaymentGross;
+            paycheck.PaymentNet = paycheck.PaymentGross - _taxService.CalculateTaxDecimal(paycheck.PaymentGross);
+            _paycheckRepository.UpdateSalary(paycheck);
+        }
+
         private Paycheck GeneratePaycheck(string lastName, string departmentName)
         {
             var random = new Random();
@@ -60,6 +78,6 @@ namespace WebApi.Services
                 PaycheckId = paycheckId
             };
             return employee;
-        } 
+        }
     }
 }
