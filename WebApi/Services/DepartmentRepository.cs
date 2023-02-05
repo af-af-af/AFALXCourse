@@ -1,23 +1,100 @@
-﻿using WebApi.Models;
+﻿using System.Data.SqlClient;
+using WebApi.Models;
 using WebApi.Services.Interfaces;
 
 namespace WebApi.Services
 {
     public class DepartmentRepository : IDepartmentRepository
     {
-        public Task Create(Department entity)
+        private const string _connectionString = "";
+
+        public async Task Create(Department department)
         {
-            throw new NotImplementedException();
+            var queryString = "insert into Departments(Id, DepartmentName) values(@id, @name)";
+
+            using (var connection = new SqlConnection(_connectionString))
+            {
+                var command = new SqlCommand(queryString, connection);
+                command.Parameters.AddWithValue("@id", department.Id.ToString());
+                command.Parameters.AddWithValue("@name", department.DepartmentName);
+                try
+                {
+                    connection.Open();
+                    command.ExecuteNonQuery();
+                    return;
+                }
+                catch (Exception ex)
+                {
+                    throw;
+                }
+            }
         }
 
-        public Task<List<Department>> GetAll()
+        public async Task<List<Department>> GetAll()
         {
-            throw new NotImplementedException();
+            var departments = new List<Department>();
+            var queryString = "select * from Departments";
+
+            using (var connection = new SqlConnection(_connectionString))
+            {
+                var sqlCommand = new SqlCommand(queryString, connection);
+                try
+                {
+                    connection.Open();
+                    var sqlDataReader = sqlCommand.ExecuteReader();
+
+                    while (sqlDataReader.Read())
+                    {
+                        var department = new Department
+                        {
+                            Id = Guid.Parse(sqlDataReader[0].ToString()),
+                            DepartmentName = sqlDataReader[1].ToString()
+                        };
+                        departments.Add(department);
+                    }
+                    sqlDataReader.Close();
+                    return departments;
+                }
+                catch (Exception ex)
+                {
+                    throw;
+                }
+            }
         }
 
-        public Task<Department> GetById(Guid Id)
+        public async Task<Department> GetById(Guid Id)
         {
-            throw new NotImplementedException();
+            var departments = new List<Department>();
+            var queryString = $"select * from Departments where Id = @id";
+
+            using (var connection = new SqlConnection(_connectionString))
+            {
+                var sqlCommand = new SqlCommand(queryString, connection);
+                sqlCommand.Parameters.AddWithValue("@id", Id.ToString());
+                try
+                {
+                    connection.Open();
+                    var sqlDataReader = sqlCommand.ExecuteReader();
+
+                    while (sqlDataReader.Read())
+                    {
+                        var department = new Department
+                        {
+                            Id = Guid.Parse(sqlDataReader[0].ToString()),
+                            DepartmentName = sqlDataReader[1].ToString()
+                        };
+                        departments.Add(department);
+                    }
+                    sqlDataReader.Close();
+                    return departments.FirstOrDefault();
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                    Console.WriteLine(ex.StackTrace);
+                    throw;
+                }
+            }
         }
     }
 }
