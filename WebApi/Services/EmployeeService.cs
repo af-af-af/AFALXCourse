@@ -24,7 +24,42 @@ namespace WebApi.Services
 
         public async Task AddEmployee(EmployeeDTO employeeDto)
         {
-
+            var paycheck = GeneratePaycheck(employeeDto.LastName, employeeDto.DepartmentName);
+            await _paycheckRepository.Create(paycheck);
+            var department = await GetDepartment(employeeDto.DepartmentName);
+            var employee = CreateEmployee(employeeDto, paycheck.Id, department.Id);
+            await _employeeRepository.Create(employee);
         }
+
+        private Paycheck GeneratePaycheck(string lastName, string departmentName)
+        {
+            var random = new Random();
+            var paycheck = new Paycheck
+            {
+                Id = Guid.NewGuid(),
+                PaycheckNumber = $"{lastName}/{departmentName}/" + random.Next(1, 100).ToString()
+            };
+            return paycheck;
+        }
+
+        private async Task<Department> GetDepartment(string departmentName)
+        {
+            var department = await _departmentRepository.GetByName(departmentName);
+            return department;
+        }
+
+        private Employee CreateEmployee(EmployeeDTO employeeDto, Guid paycheckId, Guid departmentId)
+        {
+            var employee = new Employee
+            {
+                Id = Guid.NewGuid(),
+                FirstName = employeeDto.FirstName,
+                LastName = employeeDto.LastName,
+                Email = employeeDto.Email,
+                DepartmentId = departmentId,
+                PaycheckId = paycheckId
+            };
+            return employee;
+        } 
     }
 }
