@@ -11,7 +11,7 @@ namespace WebApi.Controllers
     {
         // GET: api/<ValuesController1>
         [HttpGet]
-        public IEnumerable<Employee> GetAll()
+        public async Task<IEnumerable<Employee>> GetAll()
         {
             return new List<Employee>() { new Employee 
             {
@@ -26,7 +26,7 @@ namespace WebApi.Controllers
 
         // GET api/<ValuesController1>/5
         [HttpGet("{id}")]
-        public Employee Get(int id)
+        public async Task<Employee> Get(int id)
         {
             return new Employee
             {
@@ -41,16 +41,14 @@ namespace WebApi.Controllers
 
         // POST api/<ValuesController1>
         [HttpPost]
-        public void Post([FromQuery] Employee employee)
+        public async Task Post([FromQuery] EmployeeDTO employee)
         {
-            var employee1 = new Employee
+            var employee1 = new EmployeeDTO
             {
-                Id = employee.Id,
                 FirstName = employee.FirstName,
                 LastName = employee.LastName,
                 Email = employee.Email,
-                PaycheckId = employee.PaycheckId,
-                DepartmentId = employee.DepartmentId
+                DepartmentName = employee.DepartmentName
             };
         }
     }
