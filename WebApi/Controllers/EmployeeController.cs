@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using WebApi.Models;
+using WebApi.Services.Interfaces;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -9,6 +10,13 @@ namespace WebApi.Controllers
     [ApiController]
     public class EmployeeController : ControllerBase
     {
+        private IEmployeeService _employeeService;
+
+        public EmployeeController(IEmployeeService service)
+        {
+            _employeeService = service;
+        }
+
         // GET: api/<ValuesController1>
         [HttpGet]
         public async Task<IEnumerable<Employee>> GetAll()
@@ -43,13 +51,7 @@ namespace WebApi.Controllers
         [HttpPost]
         public async Task Post([FromQuery] EmployeeDTO employee)
         {
-            var employee1 = new EmployeeDTO
-            {
-                FirstName = employee.FirstName,
-                LastName = employee.LastName,
-                Email = employee.Email,
-                DepartmentName = employee.DepartmentName
-            };
+            await _employeeService.AddEmployee(employee);
         }
     }
 }
